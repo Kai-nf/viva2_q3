@@ -1,5 +1,7 @@
 package viva.pkg2;
 
+import java.util.Scanner;
+
 public class Viva2 {
     //create a function format
     public static String format(int num, int width){
@@ -33,6 +35,16 @@ public class Viva2 {
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
+
+        //prompt user to input number and width
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter an integer number: ");
+        int number = scanner.nextInt();
+        System.out.print("Please enter the width required: ");
+        int wid = scanner.nextInt();
+
+        String Result = format(number, wid);
+        System.out.println(Result);
     }
     
 }
